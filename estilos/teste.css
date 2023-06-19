@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("../imagens/london.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    grid-template-areas: "logo menu" ;
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+}
+
+.menu {
+    grid-area: menu;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: 
+    "countdown"
+    "description"
+    "call-to-action";
+}   
+
+.countdown-container {
+    grid-area: "countdown";
+    align-self: end;
+    color: white;
+    font-weight: bold;
+    padding: 1.25em;
+    text-align: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown-item {
+    margin: 1em 1.5em;
+}
+
+.countdown-item span {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.1em;
+}
+
+p.countdown-item {
+    font-size: 3em;
+    font-weight: bold;
+
+}
+
+#days, #dias {
+    color: red;
+}
+
+#hours, #horas {
+    color: yellow;
+}
+
+#minutes, #minutos {
+    color: blue;
+}
+
+#seconds, #segundos {
+    color: green;
+}
+
+.event-description {
+    grid-area: description;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+section+h1 {
+    background-color: brown;
+    overflow-y: visible;
+    font-size: 15em;
+    margin-bottom: 5em;
+}
+
+section+p {
+    background-color: blueviolet;
+    overflow-y: visible;
+    font-size: 7.5em;
+}
+
+.call-to-action {
+    grid-area: call-to-action;
+    align-self: start;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button.call-to-action {
+    color: white;
+    background-color: brown;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
