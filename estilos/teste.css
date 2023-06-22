@@ -24,25 +24,35 @@ body {
 header {
     grid-area: header;
     display: grid;
+    align-content: center;
+    justify-content: center;
     grid-template-columns: 1fr 2fr;
-    align-items: center;
     grid-template-areas: "logo menu" ;
 }
 
 #logo {
-    grid-area: logo;
     justify-self: center;
+    grid-area: logo;
+
 }
 
 .menu {
     grid-area: menu;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4em;
     color: white;
     display: flex;
     justify-content: center;
 }
 
+li {
+    list-style-type: none;
+}
+
 a {
 	text-decoration: none;
+    margin: 1.5em;
 }
 
 a:hover {
@@ -51,18 +61,16 @@ a:hover {
 }
 
 main {
+    background-color: black;
     grid-area: main;
-    display: grid;
-    grid-template-rows: 2fr 1fr 2fr;
-    grid-template-areas: 
-    "countdown"
-    "description"
-    "call-to-action";
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }   
 
 .countdown-container {
-    grid-area: "countdown";
-    align-self: end;
+    background-color: brown;
     color: white;
     font-weight: bold;
     padding: 1.25em;
@@ -107,34 +115,30 @@ p.countdown-item {
 }
 
 .event-description {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
     grid-area: description;
+    font-size: 2em;
     color: white;
     font-weight: bold;
     text-align: center;
+    align-items: center;
 }
 
-section+h1 {
-    background-color: brown;
-    overflow-y: visible;
-    font-size: 15em;
+#h1-description {
     margin-bottom: 5em;
 }
 
-section+p {
-    background-color: blueviolet;
-    overflow-y: visible;
-    font-size: 7.5em;
-}
-
 .call-to-action {
+    background-color: blue;
     grid-area: call-to-action;
-    align-self: start;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-button.call-to-action {
+button {
     color: white;
     background-color: brown;
 }
