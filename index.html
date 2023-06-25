@@ -5,58 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Eventos</title>
-    <link rel="stylesheet" href="estilos/teste.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="scripts/temporizador.js" defer></script>
     <link rel="icon" type="image/x-icon" href="imagens/GameSoft.ico">
 </head>
 <body>
     <div class="container">
         <header>
-            <img id="logo" src="imagens/gamesoft_logo.png" alt="logo da gamesoft" width="220" height="50">
-            <div class="menu">
-                <li>
-                    <a>HOME</a>
-                    <a>EVENTOS</a>
-                    <a>ESPAÇOS</a>
-                    <a>PALESTRANTES</a>
-                    <a>NOTÍCIAS</a>
-                    <a>CONTATO</a>
-                </li>
-            </div>
+            <img id="logo" src="imagens/Landscape-Lichess-logo.png" alt="logo da gamesoft" height="52" width="128">
+            <nav>
+                <ul>
+                    <li><a id="home" href="#">HOME</a></li>
+                    <li><a href="#">ORGANIZADORES</a></li>
+                    <li><a href="#">REGULAMENTO</a></li>
+                    <li><a href="#">NOTÍCIAS</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
-            <section class="countdown-container"> 
-                <div class="countdown" id="countdown">
-                    <div class="countdown-item">
-                        <span id="days">00</span>
-                        <p id="dias">Dias</p>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="hours">00</span>
-                        <p id="horas">Horas</p>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="minutes">00</span>
-                        <p id="minutos">Minutos</p>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="seconds">00</span>
-                        <p id="segundos">Segundos</p>
-                    </div>
+            <section class="countdown-container">
+                <div class="countdown row" id="countdown">
+                  <div class="col-3 countdown-item">
+                    <span id="days">00</span>
+                    <p id="dias">Dias</p>
+                  </div>
+                  <div class="col-3 countdown-item">
+                    <span id="hours">00</span>
+                    <p id="horas">Horas</p>
+                  </div>
+                  <div class="col-3 countdown-item">
+                    <span id="minutes">00</span>
+                    <p id="minutos">Minutos</p>
+                  </div>
+                  <div class="col-3 countdown-item">
+                    <span id="seconds">00</span>
+                    <p id="segundos">Segundos</p>
+                  </div>
                 </div>
-            </section>
+              </section>
             <section class="event-description">
-                <h1 id="h1-description">CONFERÊNCIA PARA VIAJANTES DO TEMPO</h1>
-                <P p="p-description">LONDRES, 06-08 AGOSTO, 2004</P>
+                <h1>TORNEIO CEARENSE DE XADREZ ONLINE</h1>
+                <P>LICHESS.ORG, 01-02 JULHO, 2023</P>
             </section>
             <section class="call-to-action">
-                <button type="button">REGISTRE-SE</button>
-                <button type="button">SAIBA MAIS</button>
+                <button type="button" class="btn btn-primary rounded-pill mr-2">INSCREVA-SE</button>
+                <button type="button" class="btn btn-outline-primary rounded-pill">SAIBA MAIS</button>
             </section>  
         </main>
         <footer>
-                <p>ATENÇÃO: Evite paradoxos temporais, viaje com segurança.</p>
-                <p>&copy; 2004 Evento para Viajantes do Tempo. Todos os direitos reservados.</p>
-            </div>
+            <p>Oficialmente reconhecido e financiado pela CBX</p>
+            <p>&copy; 2023 Torneio Cearense de Xadrez Online. Todos os direitos reservados.</p>
         </footer>
     </div>    
 </body>
