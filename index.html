@@ -13,14 +13,14 @@
 <body>
     <div class="container">
         <header>
-            <img id="logo" src="imagens/Landscape-Lichess-logo.png" alt="logo da gamesoft" height="52" width="128">
+            <img id="logo" src="imagens/white_lichess.png" alt="logo da gamesoft" height="52" width="128">
             <nav>
                 <ul>
                     <li><a id="home" href="#">HOME</a></li>
-                    <li><a href="#">ORGANIZADORES</a></li>
-                    <li><a href="#">REGULAMENTO</a></li>
-                    <li><a href="#">NOTÍCIAS</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="errorPage.html">ORGANIZADORES</a></li>
+                    <li><a href="errorPage.html">REGULAMENTO</a></li>
+                    <li><a href="errorPage.html">PROGRAMAÇÃO</a></li>
+                    <li><a href="errorPage.html">CONTATO</a></li>
                 </ul>
             </nav>
         </header>
@@ -50,12 +50,14 @@
                 <P>LICHESS.ORG, 01-02 JULHO, 2023</P>
             </section>
             <section class="call-to-action">
-                <button type="button" class="btn btn-primary rounded-pill mr-2">INSCREVA-SE</button>
-                <button type="button" class="btn btn-outline-primary rounded-pill">SAIBA MAIS</button>
+                <div class="button-wrapper">
+                  <button type="button" onclick="window.location.href = 'errorPage.html'" class="btn btn-primary rounded-pill mr-2">INSCREVA-SE</button>
+                  <button type="button" onclick="window.location.href = 'errorPage.html'" class="btn btn-outline-primary rounded-pill">SAIBA MAIS</button>
+                </div>  
             </section>  
         </main>
         <footer>
-            <p>Oficialmente reconhecido e financiado pela CBX</p>
+            <p>Oficialmente reconhecido e patrocinado pela FCX</p>
             <p>&copy; 2023 Torneio Cearense de Xadrez Online. Todos os direitos reservados.</p>
         </footer>
     </div>    
